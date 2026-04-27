@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>后台原型导航</title>
+  <title>产品管理</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -175,7 +175,7 @@ tbody tr:hover td { background: #fafafa; }
 <a href="./dealers.html" class="nav-item"><i class="fa-solid fa-store"></i>经销商管理</a>
 <a href="./permissions.html" class="nav-item"><i class="fa-solid fa-user-shield"></i>权限管理</a>
 <div class="nav-group-title">商品与内容</div>
-<a href="./products.html" class="nav-item"><i class="fa-solid fa-image"></i>产品管理</a>
+<a href="./products.html" class="nav-item active"><i class="fa-solid fa-image"></i>产品管理</a>
 <a href="./content-config.html" class="nav-item"><i class="fa-solid fa-panorama"></i>内容配置</a>
 <div class="nav-group-title">订单与履约</div>
 <a href="./orders.html" class="nav-item"><i class="fa-solid fa-receipt"></i>订单管理</a>
@@ -190,7 +190,7 @@ tbody tr:hover td { background: #fafafa; }
   <div class="main">
     <header class="header">
       <div class="header-left">
-        <div class="breadcrumb"><span>原型导航</span><span class="breadcrumb-sep">/</span><span>后台原型导航</span></div>
+        <div class="breadcrumb"><span>商品与内容</span><span class="breadcrumb-sep">/</span><span>产品管理</span></div>
       </div>
       <div class="header-right">
         <i class="fa-regular fa-bell header-icon"></i>
@@ -201,102 +201,39 @@ tbody tr:hover td { background: #fafafa; }
     </header>
     <div class="page-content">
       <div class="page-header">
-        <div class="page-title">后台原型导航</div>
-        <div class="page-desc">按当前 PRD 与 UI 规范抽出的管理平台页面目录，可直接点击进入各静态页面。</div>
+        <div class="page-title">产品管理</div>
+        <div class="page-desc">维护订单同步字段与展示图片的映射关系，用于补齐订单里缺失的产品图和面板花色图。</div>
       </div>
       
 <div class="stats-grid">
-  <div class="stat-card"><div class="stat-label">原型页面数</div><div class="stat-value">16</div><div class="stat-change up">覆盖账号、商品、订单、履约、模板与权限</div></div>
-  <div class="stat-card"><div class="stat-label">后台主定位</div><div class="stat-value" style="font-size:20px;">配置中枢 + 运营后台</div><div class="stat-change up">遵循 Ant Design Pro 管理逻辑</div></div>
-  <div class="stat-card"><div class="stat-label">当前重点</div><div class="stat-value" style="font-size:20px;">订单 / 施工 / 模板</div><div class="stat-change up">对齐当前项目已确认业务链路</div></div>
+  <div class="stat-card"><div class="stat-label">已维护映射</div><div class="stat-value">12</div><div class="stat-change up">覆盖主要订单产品名</div></div>
+  <div class="stat-card"><div class="stat-label">待补图片</div><div class="stat-value">3</div><div class="stat-change down">缺产品图 1，缺花色图 2</div></div>
+  <div class="stat-card"><div class="stat-label">订单引用</div><div class="stat-value">286</div><div class="stat-change up">按类型 + 产品名自动匹配</div></div>
+  <div class="stat-card"><div class="stat-label">未匹配订单</div><div class="stat-value">5</div><div class="stat-change down">同步字段需要确认</div></div>
 </div>
-<div class="card" style="margin-bottom:16px;"><div class="card-body"><div class="split-note">页面范围基于当前项目文档与最新调整意见抽取：后台重点负责用户匹配查询、经销商账号、产品图片映射、订单、物流节点、安装订单、施工单、模板与权限维护。为便于客户评审，这套原型使用真实感模拟数据和典型管理后台结构，不接真实接口。</div></div></div>
-<div class="grid-3">
-  <a href="./dashboard.html" class="mini-card" style="display:block;">
-    <h4>运营概览</h4>
-    <p>工作台 · 运营概览</p>
-  </a>
-
-  <a href="./users.html" class="mini-card" style="display:block;">
-    <h4>用户管理</h4>
-    <p>账号中心 · 用户管理</p>
-  </a>
-
-  <a href="./dealers.html" class="mini-card" style="display:block;">
-    <h4>经销商管理</h4>
-    <p>账号中心 · 经销商管理</p>
-  </a>
-
-  <a href="./permissions.html" class="mini-card" style="display:block;">
-    <h4>权限管理</h4>
-    <p>账号中心 · 权限管理</p>
-  </a>
-
-  <a href="./content-config.html" class="mini-card" style="display:block;">
-    <h4>内容配置</h4>
-    <p>商品与内容 · 内容配置</p>
-  </a>
-
-  <a href="./products.html" class="mini-card" style="display:block;">
-    <h4>产品管理</h4>
-    <p>商品与内容 · 订单产品图片映射</p>
-  </a>
-
-  <a href="./orders.html" class="mini-card" style="display:block;">
-    <h4>订单管理</h4>
-    <p>订单与履约 · 订单管理</p>
-  </a>
-
-  <a href="./logistics-templates.html" class="mini-card" style="display:block;">
-    <h4>物流节点模板</h4>
-    <p>订单与履约 · 物流节点模板</p>
-  </a>
-
-  <a href="./install-orders.html" class="mini-card" style="display:block;">
-    <h4>安装订单</h4>
-    <p>订单与履约 · 安装订单</p>
-  </a>
-
-  <a href="./order-detail.html" class="mini-card" style="display:block;">
-    <h4>订单详情</h4>
-    <p>订单与履约 · 订单详情</p>
-  </a>
-
-  <a href="./install-order-detail.html" class="mini-card" style="display:block;">
-    <h4>安装订单详情</h4>
-    <p>订单与履约 · 安装订单详情</p>
-  </a>
-
-  <a href="./work-orders.html" class="mini-card" style="display:block;">
-    <h4>施工单管理</h4>
-    <p>订单与履约 · 施工单管理</p>
-  </a>
-
-  <a href="./work-order-detail.html" class="mini-card" style="display:block;">
-    <h4>施工单详情</h4>
-    <p>订单与履约 · 施工单详情</p>
-  </a>
-
-  <a href="./inspection-templates.html" class="mini-card" style="display:block;">
-    <h4>检查模板</h4>
-    <p>模板配置 · 检查模板</p>
-  </a>
-
-  <a href="./photo-templates.html" class="mini-card" style="display:block;">
-    <h4>拍摄模板</h4>
-    <p>模板配置 · 拍摄模板</p>
-  </a>
-
-  <a href="./acceptance-templates.html" class="mini-card" style="display:block;">
-    <h4>验收模板</h4>
-    <p>模板配置 · 验收模板</p>
-  </a>
+<div class="card" style="margin-bottom:16px;"><div class="filter-bar">
+  <div class="filter-item"><span class="filter-label">关键词</span><div class="search-wrap"><i class="fa-solid fa-magnifying-glass"></i><input type="text" class="search-input" placeholder="类型 / 产品名 / 花色"></div></div>
+  <div class="filter-item"><span class="filter-label">订单类型</span><select style="width:140px;"><option>全部</option><option selected>厨房</option><option>水槽</option><option>收纳</option></select></div>
+  <div class="filter-item"><span class="filter-label">维护状态</span><select style="width:140px;"><option>全部</option><option selected>全部状态</option><option>已完整</option><option>待补图片</option><option>未匹配</option></select></div>
+  <button class="btn btn-primary">搜索</button><button class="btn btn-default">重置</button>
+</div></div>
+<div class="card">
+  <div class="action-bar"><div class="action-bar-left"><button class="btn btn-primary"><i class="fa-solid fa-plus"></i>新增产品映射</button><button class="btn btn-default"><i class="fa-solid fa-upload"></i>批量导入映射</button><button class="btn btn-default">导出未匹配订单</button></div><div class="action-bar-right"><span class="tag tag-blue"><span class="tag-dot"></span>订单图片补齐口径</span></div></div>
+  <div class="table-wrap"><table><thead><tr><th>订单传入类型</th><th>订单产品名</th><th>产品图片</th><th>面板花色图片</th><th>匹配字段</th><th>订单引用</th><th>状态</th><th>最后更新</th><th>操作</th></tr></thead><tbody>
+    <tr><td>厨房</td><td>STEDIA 系列橱柜</td><td><div class="cover-thumb" style="height:68px;width:112px;background:linear-gradient(135deg,#f5f6f7,#dfe7ea);">产品图</div></td><td><div class="cover-thumb" style="height:68px;width:112px;background:linear-gradient(135deg,#8a5d38,#d4aa74);color:#fff;">深木纹</div></td><td>type=KITCHEN<br>name=STEDIA</td><td>86 单</td><td><span class="tag tag-success"><span class="tag-dot"></span>已完整</span></td><td>2026-04-26 15:22</td><td><div class="col-ops"><button class="btn btn-link">编辑</button><button class="btn btn-link">预览</button></div></td></tr>
+    <tr><td>厨房</td><td>HIROMA 紧凑厨房</td><td><div class="cover-thumb" style="height:68px;width:112px;background:linear-gradient(135deg,#ece7dd,#b7aa96);">产品图</div></td><td><div class="cover-thumb" style="height:68px;width:112px;background:linear-gradient(135deg,#f3eee5,#b9a17b);">浅橡木</div></td><td>type=KITCHEN<br>name=HIROMA</td><td>64 单</td><td><span class="tag tag-success"><span class="tag-dot"></span>已完整</span></td><td>2026-04-25 11:08</td><td><div class="col-ops"><button class="btn btn-link">编辑</button><button class="btn btn-link">预览</button></div></td></tr>
+    <tr><td>水槽</td><td>静音水槽组合</td><td><div class="cover-thumb" style="height:68px;width:112px;background:linear-gradient(135deg,#eef2f3,#b7c0c3);">产品图</div></td><td><div class="cover-thumb" style="height:68px;width:112px;background:#f8fafc;color:#9ca3af;">不适用</div></td><td>type=SINK<br>name=静音水槽</td><td>41 单</td><td><span class="tag tag-blue"><span class="tag-dot"></span>无需花色</span></td><td>2026-04-23 09:40</td><td><div class="col-ops"><button class="btn btn-link">编辑</button><button class="btn btn-link">预览</button></div></td></tr>
+    <tr><td>厨房</td><td>橱柜型号名称</td><td><div class="cover-thumb" style="height:68px;width:112px;background:#fff7ed;color:#d97706;">待上传</div></td><td><div class="cover-thumb" style="height:68px;width:112px;background:linear-gradient(135deg,#4b5563,#cbd5e1);color:#fff;">灰色门板</div></td><td>type=KITCHEN<br>name=橱柜型号名称</td><td>18 单</td><td><span class="tag tag-warning"><span class="tag-dot"></span>缺产品图</span></td><td>2026-04-20 10:18</td><td><div class="col-ops"><button class="btn btn-link">补图</button><button class="btn btn-link">编辑</button></div></td></tr>
+    <tr><td>未识别</td><td>ERP-NAME-0042</td><td><div class="cover-thumb" style="height:68px;width:112px;background:#fef2f2;color:#dc2626;">未匹配</div></td><td><div class="cover-thumb" style="height:68px;width:112px;background:#fef2f2;color:#dc2626;">未匹配</div></td><td>type=UNKNOWN<br>name=ERP-NAME-0042</td><td>5 单</td><td><span class="tag tag-error"><span class="tag-dot"></span>待建映射</span></td><td>-</td><td><div class="col-ops"><button class="btn btn-link">创建映射</button><a class="btn btn-link" href="./orders.html">查看订单</a></div></td></tr>
+  </tbody></table></div>
+  <div class="pagination"><span class="pagination-info">共 15 条映射记录</span><div class="page-btn active">1</div><div class="page-btn">2</div><div class="page-btn"><i class="fa-solid fa-angle-right"></i></div></div>
 </div>
+<div class="card" style="margin-top:16px;"><div class="card-body"><div class="split-note">产品管理只维护“订单同步字段 -> 展示图片”的映射关系。订单同步本身仍以类型、产品名、型号等字段为准；用户端和后台订单详情需要展示图片时，从这里取产品图片和面板花色图片。</div></div></div>
 
     </div>
   </div>
   
-  <div class="proto-bar">管理平台静态原型 · 仅供评审 <a href="./dashboard.html">运营概览</a><a href="./orders.html">订单管理</a><a href="./work-orders.html">施工单管理</a><a href="./inspection-templates.html">检查模板</a><a href="./permissions.html">权限管理</a></div>
+  <div class="proto-bar">管理平台静态原型 · 仅供评审 <a href="./dashboard.html">运营概览</a><a href="./products.html">产品管理</a><a href="./orders.html">订单管理</a><a href="./work-orders.html">施工单管理</a><a href="./inspection-templates.html">检查模板</a></div>
   <script>
     function openModal(id) { var el = document.getElementById(id); if (el) el.style.display = 'flex'; }
     function closeModal(id) { var el = document.getElementById(id); if (el) el.style.display = 'none'; }

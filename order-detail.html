@@ -175,6 +175,7 @@ tbody tr:hover td { background: #fafafa; }
 <a href="./dealers.html" class="nav-item"><i class="fa-solid fa-store"></i>经销商管理</a>
 <a href="./permissions.html" class="nav-item"><i class="fa-solid fa-user-shield"></i>权限管理</a>
 <div class="nav-group-title">商品与内容</div>
+<a href="./products.html" class="nav-item"><i class="fa-solid fa-image"></i>产品管理</a>
 <a href="./content-config.html" class="nav-item"><i class="fa-solid fa-panorama"></i>内容配置</a>
 <div class="nav-group-title">订单与履约</div>
 <a href="./orders.html" class="nav-item active"><i class="fa-solid fa-receipt"></i>订单管理</a>
@@ -204,11 +205,11 @@ tbody tr:hover td { background: #fafafa; }
         <div class="page-desc">查看订单基础信息、物流节点推进、安装转换与异常处理记录，支持订单履约追踪和人工兜底。</div>
       </div>
       
-<div class="action-bar card" style="margin-bottom:16px; padding:16px 20px; border-radius:8px;"><div class="action-bar-left"><span class="tag tag-blue"><span class="tag-dot"></span>已到达</span><span class="tag tag-warning"><span class="tag-dot"></span>待转安装单</span><span class="tag tag-error"><span class="tag-dot"></span>待创建工单</span></div><div class="action-bar-right"><a class="btn btn-default" href="./logistics-templates.html">查看节点模板</a><a class="btn btn-default" href="./install-order-detail.html">查看安装订单</a><button class="btn btn-primary">执行状态兜底</button></div></div>
+<div class="action-bar card" style="margin-bottom:16px; padding:16px 20px; border-radius:8px;"><div class="action-bar-left"><span class="tag tag-blue"><span class="tag-dot"></span>已到达</span><span class="tag tag-success"><span class="tag-dot"></span>图片已匹配</span><span class="tag tag-warning"><span class="tag-dot"></span>待转安装单</span><span class="tag tag-error"><span class="tag-dot"></span>待创建工单</span></div><div class="action-bar-right"><a class="btn btn-default" href="./products.html">查看产品映射</a><a class="btn btn-default" href="./logistics-templates.html">查看节点模板</a><a class="btn btn-default" href="./install-order-detail.html">查看安装订单</a><button class="btn btn-primary">执行状态兜底</button></div></div>
 <div class="grid-2">
   <div class="card"><div class="card-body">
     <div class="detail-section"><div class="detail-section-title">基础信息</div><div class="desc-list"><span class="desc-label">订单号</span><span class="desc-value">CL-20240912-A</span><span class="desc-label">下单时间</span><span class="desc-value">2026-04-12 13:24</span><span class="desc-label">用户</span><span class="desc-value">李芳 / 139****2301</span><span class="desc-label">经销商</span><span class="desc-value">上海虹桥店</span><span class="desc-label">产品</span><span class="desc-value">STEDIA 系列橱柜 / 深木纹门板</span><span class="desc-label">收货地址</span><span class="desc-value">上海市闵行区申长路 188 弄 6 号</span><span class="desc-label">安装订单</span><span class="desc-value"><a href="./install-order-detail.html">INS-20260417-018</a></span></div></div>
-    <div class="detail-section"><div class="detail-section-title">履约摘要</div><div class="data-grid"><div class="mini-card"><h4>物流状态</h4><p>当前节点：目的仓签收<br>已完成下单、生产、运输、到仓 4 个关键节点</p></div><div class="mini-card"><h4>安装转换</h4><p>安装单已生成，但尚未创建施工单。当前由经销商待分配师傅。</p></div><div class="mini-card"><h4>异常提示</h4><p>安装侧已超 12 小时未创建工单，需运营跟进经销商排期。</p></div><div class="mini-card"><h4>人工操作</h4><p>支持兜底改状态、导出档案、查看节点模板与关联安装订单。</p></div></div></div>
+    <div class="detail-section"><div class="detail-section-title">履约摘要</div><div class="data-grid"><div class="mini-card"><h4>物流状态</h4><p>当前节点：目的仓签收<br>已完成下单、生产、运输、到仓 4 个关键节点</p></div><div class="mini-card"><h4>图片映射</h4><p>命中“STEDIA 系列橱柜”映射，已补齐产品图与深木纹面板花色图。</p></div><div class="mini-card"><h4>安装转换</h4><p>安装单已生成，但尚未创建施工单。当前由经销商待分配师傅。</p></div><div class="mini-card"><h4>异常提示</h4><p>安装侧已超 12 小时未创建工单，需运营跟进经销商排期。</p></div></div></div>
   </div></div>
   <div class="card"><div class="card-body">
     <div class="detail-section-title">物流与转换进程</div>
@@ -228,7 +229,7 @@ tbody tr:hover td { background: #fafafa; }
     <div class="mini-card"><h4>节点模板引用</h4><p>当前引用默认物流节点模板，共 6 个标准节点，无多模板切换。</p></div>
     <div class="mini-card"><h4>关联履约记录</h4><p>已生成安装订单，尚未创建施工单。后续将转入安装履约与验收闭环。</p></div>
   </div>
-  <div class="split-note" style="margin-top:16px;">订单详情页重点承接履约追踪与转换判断，不直接维护产品资料。订单一旦到达目的仓，运营应以安装订单和施工单的推进情况作为后续跟进核心。</div>
+  <div class="split-note" style="margin-top:16px;">订单详情页重点承接履约追踪与转换判断；订单同步不带图片时，通过“产品管理”的类型 + 产品名映射补齐产品图片和面板花色图片。订单一旦到达目的仓，运营应以安装订单和施工单的推进情况作为后续跟进核心。</div>
 </div></div>
 
     </div>

@@ -175,6 +175,7 @@ tbody tr:hover td { background: #fafafa; }
 <a href="./dealers.html" class="nav-item"><i class="fa-solid fa-store"></i>经销商管理</a>
 <a href="./permissions.html" class="nav-item"><i class="fa-solid fa-user-shield"></i>权限管理</a>
 <div class="nav-group-title">商品与内容</div>
+<a href="./products.html" class="nav-item"><i class="fa-solid fa-image"></i>产品管理</a>
 <a href="./content-config.html" class="nav-item"><i class="fa-solid fa-panorama"></i>内容配置</a>
 <div class="nav-group-title">订单与履约</div>
 <a href="./orders.html" class="nav-item"><i class="fa-solid fa-receipt"></i>订单管理</a>
@@ -201,12 +202,12 @@ tbody tr:hover td { background: #fafafa; }
     <div class="page-content">
       <div class="page-header">
         <div class="page-title">运营概览</div>
-        <div class="page-desc">查看订单同步、安装履约、验收推送和异常处理的核心运营指标。</div>
+        <div class="page-desc">查看订单同步、产品图片映射、安装履约、验收推送和异常处理的核心运营指标。</div>
       </div>
       
 <div class="stats-grid">
   <div class="stat-card"><div class="stat-label">待同步订单</div><div class="stat-value">18</div><div class="stat-change down">较昨日减少 3 单</div></div>
-  <div class="stat-card"><div class="stat-label">待创建安装单</div><div class="stat-value">9</div><div class="stat-change up">本周新增 2 单</div></div>
+  <div class="stat-card"><div class="stat-label">待补产品图片</div><div class="stat-value">3</div><div class="stat-change down">影响 23 单展示素材</div></div>
   <div class="stat-card"><div class="stat-label">待用户验收</div><div class="stat-value">6</div><div class="stat-change up">其中 2 单超 24 小时未确认</div></div>
   <div class="stat-card"><div class="stat-label">返工中工单</div><div class="stat-value">2</div><div class="stat-change down">较上周减少 1 单</div></div>
 </div>
@@ -215,6 +216,7 @@ tbody tr:hover td { background: #fafafa; }
     <div class="detail-section-title">重点待办</div>
     <div class="timeline">
       <div class="timeline-item"><div class="timeline-dot error"></div><div class="timeline-content"><h4>订单同步异常 · 3 单</h4><p>ERP 字段映射失败，涉及静安店与虹桥店订单，请进入“订单管理”定位异常订单后处理。</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot warn"></div><div class="timeline-content"><h4>产品图片映射待补 · 3 项</h4><p>同步订单没有图片，需进入“产品管理”补齐产品图和面板花色图。</p></div></div>
       <div class="timeline-item"><div class="timeline-dot warn"></div><div class="timeline-content"><h4>验收推送缺失项 · 2 单</h4><p>拍摄模板必传项未完成，推送按钮已禁用，需督促经销商补传照片。</p></div></div>
       <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>权限变更待确认</h4><p>新增“客服/售后”角色，菜单权限方案待业务负责人确认后发布。</p></div></div>
     </div>
@@ -223,9 +225,9 @@ tbody tr:hover td { background: #fafafa; }
     <div class="detail-section-title">近 7 日业务概览</div>
     <div class="data-grid">
       <div class="mini-card"><h4>同步成功率</h4><p>97.6%<br>第三方订单同步成功 164 单，失败 4 单。</p></div>
+      <div class="mini-card"><h4>图片映射覆盖率</h4><p>94.1%<br>已覆盖 12 个产品映射，仍有 5 单未命中。</p></div>
       <div class="mini-card"><h4>工单创建率</h4><p>89.2%<br>已到达订单中已有 58 单创建安装工单。</p></div>
       <div class="mini-card"><h4>验收通过率</h4><p>92.5%<br>首轮验收通过 37 单，驳回返工 3 单。</p></div>
-      <div class="mini-card"><h4>内容位点击</h4><p>1,284 次<br>服务中心 Banner 与说明书入口为本周高频点击区。</p></div>
     </div>
   </div></div>
 </div>
